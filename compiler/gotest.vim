@@ -1,4 +1,4 @@
-  
+
 " Vim compiler file
 " Compiler:	GoTest
 " Maintainer:	miya-masa
@@ -19,9 +19,14 @@ set cpo-=C
 CompilerSet makeprg=go\ test
 CompilerSet errorformat=
     \%-GFAIL%.%#,
-    \%.%#---\ FAIL:\ %m\ (%.%#),
-    \%A%f:%l:\ %m,
-    \%A%f:%l:%.%#,
+    \%-G%.%#---\ Expected%.%#,
+    \%-G%.%#+++\ Actual%.%#,
+    \%-G%.%#Diff:%.%#,
+    \%-G%.%#@@\ %.%#\ @@%.%#,
+    \%-G%.%#---\ FAIL:\ %m\ (%.%#),
+    \%-G%.%#---\ FAIL:\ %m\ (%.%#),
+    \%.%#\ %f:%l:\ ,
+    \%.%#\ %f:%l:\ %m,
     \%-G%.%#exit\ status%.%#
 
 let &cpo = s:save_cpo
