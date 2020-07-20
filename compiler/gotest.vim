@@ -27,11 +27,10 @@ CompilerSet errorformat=
     \%-G%.%#---\ FAIL:\ %m\ (%.%#),
     \%.%#\ %f:%l:\ ,
     \%.%#\ %f:%l:\ %m,
-    \%-G%.%#exit\ status%.%#,
-    \%-G#\ %.%#,
     \%A%f:%l:%c:\ %m,
     \%A%f:%l:\ %m,
-    \%C%*\\s%m
+    \%-G%.%#exit\ status%.%#,
+    \%-G#\ %.%#
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
