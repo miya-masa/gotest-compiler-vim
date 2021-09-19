@@ -1,4 +1,3 @@
-
 " Vim compiler file
 " Compiler:	GoTest
 " Maintainer:	miya-masa
@@ -18,32 +17,18 @@ set cpo-=C
 
 CompilerSet makeprg=go\ test
 CompilerSet errorformat=
-      \%\s%#%f:%l:%\s%#%m,
-      \DEBUG%\s%#%m,
-      \%A%.%#Error\ Trace:%.%#,
-      \%Z%.%#Test:%\s%#%m,
-      \%C%\s%#\ %m,
-      \%-G%.%
-
-" CompilerSet errorformat=
-"     \%-GFAIL%.%#,
-"     \%-G%.%#---\ Expected%.%#,
-"     \%-G%.%#+++\ Actual%.%#,
-"     \%-G%.%#Diff:%.%#,
-"     \%-G%.%#@@\ %.%#\ @@%.%#,
-"     \%-G%.%#---\ FAIL:\ %m\ (%.%#),
-"     \%-G%.%#---\ FAIL:\ %m\ (%.%#),
-"     \%-G%.%#panic%.%#,
-"     \\	%f:%l%.%#,
-"     \%.%#\ %f:%l:\ ,
-"     \%.%#\ %f:%l:\ %m,
-"     \%A%f:%l:%c:\ %m,
-"     \%A%f:%l:\ %m,
-"     \%-G%.%#exit\ status%.%#,
-"     \%-G#\ %.%#
-
+      \%\\s%#%f:%l:%\\s%#%m,
+      \DEBUG%\\s%#%m,
+      \%-G%.%#Error\ Trace:%.%#,
+      \%-G%\\s%#,
+      \%\\s%#%f:%l%\\s%#%m,
+      \%\\s%#Error:%\\s%#%m,
+      \%\\s%#%\\s%m,
+      \%-G%.%#,
+      \%-G%.%#
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
 
 " vim: sw=2 sts=2 et
+
