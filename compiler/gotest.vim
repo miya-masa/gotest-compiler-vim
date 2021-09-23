@@ -17,13 +17,14 @@ set cpo-=C
 
 CompilerSet makeprg=go\ test
 CompilerSet errorformat=
-      \%\\s%#%f:%l:%\\s%#%m,
-      \DEBUG%\\s%#%m,
-      \%-G%.%#Error\ Trace:%.%#,
+      \%A%.%#Error\ Trace:%.%#,
+      \%Z%\\s%#Error:%\\s%#%m,
+      \%C%.%#,
       \%-G%\\s%#,
+      \%\\s%#%f:%l:%\\s%#%m,
       \%\\s%#%f:%l%\\s%#%m,
-      \%\\s%#Error:%\\s%#%m,
       \%\\s%#%\\s%m,
+      \DEBUG%\\s%#%m,
       \%-G%.%#,
       \%-G%.%#
 
