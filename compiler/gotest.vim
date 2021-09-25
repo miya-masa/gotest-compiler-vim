@@ -18,6 +18,8 @@ set cpo-=C
 CompilerSet makeprg=go\ test
 CompilerSet errorformat=
       \%.%#---\ FAIL:%\\s%#%m\ (%.%#),
+      \%-G?%.%#,
+      \%-Gok%.%#,
       \%-GFAIL%.%#,
       \%A%.%#Error\ Trace:%.%#,
       \%Z%\\s%#Error:%\\s%#%m,
