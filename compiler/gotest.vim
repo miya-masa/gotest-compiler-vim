@@ -17,16 +17,16 @@ set cpo-=C
 
 CompilerSet makeprg=go\ test
 CompilerSet errorformat=
+      \%.%#---\ FAIL:%\\s%#%m\ (%.%#),
+      \%-GFAIL%.%#,
       \%A%.%#Error\ Trace:%.%#,
       \%Z%\\s%#Error:%\\s%#%m,
       \%C%.%#,
       \%-G%\\s%#,
       \%\\s%#%f:%l:%\\s%#%m,
       \%\\s%#%f:%l%\\s%#%m,
-      \%\\s%#%\\s%m,
       \DEBUG%\\s%#%m,
-      \%-G%.%#,
-      \%-G%.%#
+      \%\\s%#%m
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
