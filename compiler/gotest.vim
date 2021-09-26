@@ -19,7 +19,9 @@ CompilerSet makeprg=go\ test
 CompilerSet errorformat=
       \%.%#---\ FAIL:%\\s%#%m\ (%.%#),
       \%-G?%.%#,
+      \%-G{%.%#,
       \%-Gok%.%#,
+      \%-GPASS%.%#,
       \%-GFAIL%.%#,
       \%A%.%#Error\ Trace:%.%#,
       \%Z%\\s%#Error:%\\s%#%m,
