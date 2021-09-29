@@ -27,6 +27,8 @@ CompilerSet errorformat=
       \%Z%\\s%#Error:%\\s%#%m,
       \%C%.%#,
       \%-G%\\s%#,
+      \%+G%\\s%#expected%\\s%#:%.%#,
+      \%+G%\\s%#actual%\\s%#:%.%#,
       \%\\s%#%f:%l:%\\s%#%m,
       \%\\s%#%f:%l%\\s%#%m,
       \DEBUG%\\s%#%m,
