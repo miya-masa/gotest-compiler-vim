@@ -29,9 +29,11 @@ CompilerSet errorformat=
       \%-G%\\s%#,
       \%+G%\\s%#expected%\\s%#:%.%#,
       \%+G%\\s%#actual%\\s%#:%.%#,
+      \DEBUG:%\\s%#%m,
+      \%+G%.%#%.%.%.%.-%.%.-%.%.%.%#,
+      \%+G%.%#%.%.:%.%.:%.%#,
       \%\\s%#%f:%l:%\\s%#%m,
       \%\\s%#%f:%l%\\s%#%m,
-      \DEBUG%\\s%#%m,
       \%\\s%#%m
 
 let &cpo = s:save_cpo
